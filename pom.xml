@@ -23,6 +23,14 @@
       <module>cloud-consumer-feign-hystrix-order80</module>
       <module>hystrix-dashboard9001</module>
       <module>cloud-gateway-gateway9527</module>
+      <module>cloud-config-center-3344</module>
+      <module>cloud-stream-rabbitmq-provider8801</module>
+      <module>cloud-stream-rabbitmq-consumer8802</module>
+      <module>cloud-stream-rabbitmq-consumer8803</module>
+    <module>cloudalibaba-provider-payment9001</module>
+    <module>cloudalibaba-provider-payment9002</module>
+    <module>cloudalibaba-consumer-nacos-order83</module>
+    <module>cloudalibaba-config-nacos-client3377</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -57,7 +65,15 @@
 
   <!-- 子模块继承之后，提供作用： 锁定版本+子module不用写groupID和version-->
   <dependencyManagement>
+
     <dependencies>
+      <dependency>
+          <groupId>com.alibaba.cloud</groupId>
+          <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+          <version>2021.0.1.0</version>
+          <type>pom</type>
+          <scope>import</scope>
+      </dependency>
       <!-- spring boot 2.6.7-->
       <dependency>
         <groupId>org.springframework.boot</groupId>

@@ -1,0 +1,16 @@
+# Project exclude paths
+/cloud-consumer-feign-hystrix-order80/target/
+/cloud-gateway-gateway9527/target/
+/common/target/
+/consul-order80/target/
+/hystrix-dashboard9001/target/
+/hystrix-payment8001/target/
+/order/target/
+/order-feign/target/
+/orderzookeeper80/target/
+/payment/target/
+/payment8002/target/
+/payment8006/target/
+/paymentzookeeper8004/target/
+/server7001/target/
+/server7002/target/
