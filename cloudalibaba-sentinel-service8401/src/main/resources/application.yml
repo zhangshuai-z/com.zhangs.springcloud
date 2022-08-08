@@ -1,0 +1,25 @@
+server:
+  port: 8401
+
+spring:
+  application:
+    name: cloudalibaba-sentinel-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.10.3
+    sentinel:
+      transport:
+        # 配置sentinel dashboard地址
+        dashboard: localhost:8080
+        #默认8179端口，假如被占用会自动从8179开始依次—+1扫描，直至找到未找用的端口号
+        port: 8179
+#        clientIp: 192.168.64.215
+      # 关闭官方的CommonFilter过滤器
+      web-context-unify: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
